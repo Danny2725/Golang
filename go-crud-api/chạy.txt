@@ -1,0 +1,28 @@
+
+Chạy trên postman
+
+Lấy danh sách sách:
+
+```bash
+
+curl http://localhost:8000/books
+
+```
+Lấy thông tin theo id :
+
+curl http://localhost:8000/books/1
+
+add: 
+
+curl -X POST -H "Content-Type: application/json" -d '{"title":"New Book","author":"New Author","isbn":"54321"}' http://localhost:8000/books
+
+cập nhập theo id :
+
+curl -X PUT -H "Content-Type: application/json" -d '{"title":"Updated Book","author":"Updated Author","isbn":"54321"}' http://localhost:8000/books/1
+
+xóa theo id :
+
+curl -X DELETE http://localhost:8000/books/1
+
+
+
